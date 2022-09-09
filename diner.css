@@ -2,12 +2,6 @@
     margin: 0;
     bottom: 0;
     box-sizing: border-box;
- /* font-family: 'Homemade Apple', cursive;
-font-family: 'Oswald', sans-serif;
-font-family: 'Pacifico', cursive; */
-/* font-family: 'Quicksand', sans-serif; */
-
-
 }
 /* start blog */
 
@@ -350,11 +344,11 @@ list-style: none;
     bottom: 20px;
     right: 20px;
     /* cursor: pointer; */
-  }
-/* .container_fix{
+  /* }
+ .container_fix{
     max-width: 1200px;
 
-} */
+}  */
 /* .container{
     max-width: 1200px;
 } */
