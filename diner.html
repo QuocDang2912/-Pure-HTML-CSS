@@ -4,34 +4,157 @@
 <head>
   <title>Title</title>
   <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Google font -->
-  <link href="//fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet" />
-  <link href="//fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"
-    rel="stylesheet" />
-  <!-- Font awesome -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="./flaticon/flaticon.css">
 
-  <!-- Animation -->
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-
-  <!-- My CSS -->
-  <link rel="stylesheet" href="./diner.css" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Oswald:wght@200&family=Pacifico&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./carousel/css/owl.carousel.min.css">
   <link rel="stylesheet" href="./carousel/css/owl.theme.default.min.css">
-
+  <link rel="stylesheet" href="./diner.css">
 </head>
 
 <body>
   <!-- Giao -->
   <!-- Header -->
+  <section class="w3lhny-banner" id="home">
+    <div class="container">
+      <div class="w3_hny_header">
+        <div class="w3_hnyits_logo">
+          <h1>
+            <a href="#" class="logo-brand">Diner</a>
+          </h1>
+
+        </div>
+        <div class="w3menu-right-content">
+          <div class="search-bar">
+            <form class="search position-relative">
+              <input type="search" class="search_input" name="search" id="" placeholder="Search here.."
+                onload="equalWidth()" required>
+              <span class="fa fa-search search__icon"> </span>
+            </form>
+          </div>
+          <div class="mobile-nav-button text-center">
+            <!-- <button id="trigger-overlay" type="button">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+              </button> -->
+          </div>
+        </div>
+        <!-- <div class="mobile-position">
+          <div class="navigation">
+            <div class="theme-switch-wrapper">
+              <label class="theme-switch" for="checkbox"></label>
+              <input type="checkbox" id="checkbox">
+              <div class="mode-container">
+                <i class="gg-sun"></i>
+                <i class="gg-moon"></i>
+              </div>
+            </div>
+          </div>
+         </div> -->
+
+      </div>
+      <!-- <div class="overlay overlay-scale open">
+        <button type="button" class="overlay-close">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+      </div> -->
+
+      <div class="banner-info">
+        <h3 class="mt-5">
+          The Only Thing We Love More Than Food Is You!
+        </h3>
+        <div class="paragraph">
+          <p class="pr-lg-5 mt-4 md-4 mt-3">
+            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea
+            ipsum sed consequuntur illum facere.
+          </p>
+          <a class="btn btn-white mt-sm-5 mt-4 mr-2" href="#">
+            Read More <span class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
+        </div>
+      </div>
+  </section>
+  <!-- about us -->
+  <div class="about py-5">
+    <div class="container py-md-5">
+      <div class="about-list">
+
+        <div class="content-left ">
+          <h6 class="title-subhny title   ">About us</h6>
+          <h3 class="mb-4 title-w3l">We found our creative space that is open for you.</h3>
+        </div>
+        <div class="content-right">
+          <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.
+            Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init
+            dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init dolor sit.
+            <br>
+            <br>
+            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem
+            ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <!-- agent block -->
+  <div class="w3l-agent-block" id="why">
+    <div class="container-fluid px-lg-0">
+      <div class="row align-items-center no-gutters">
+        <div class="col-lg-6 px-lg-0 pt-lg-0 pt-5">
+          <div class="agent-block-image">
+            <!-- <img src="./image/banner3.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="col-lg-6 px-lg-4 py-lg-3 py-4">
+          <div class="agent-block-image-inf p-md-5 p-3">
+            <h6 class="title-subhny two">More than 3000 Restaurants</h6>
+            <h3 class="title-w3l two">
+              Book a table easly at the best price</h3>
+            <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus
+              turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices
+              in.</p>
+
+            <div class="subscribe-cat mt-5">
+              <div class="subscribe-cat-gd">
+                <div class="icon mb-4">
+                  <span class="fa fa-thumbs-up"></span>
+                </div>
+                <a href="#" class="subscribe-cat-link">Best Deals</a>
+                <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+              </div>
+
+              <div class="subscribe-cat-gd">
+                <div class="icon mb-4">
+                  <span class="fa fa-cutlery"></span>
+                </div>
+                <a href="#" class="subscribe-cat-link">Best Food</a>
+                <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Banner -->
 
