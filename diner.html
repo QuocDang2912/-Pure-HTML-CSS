@@ -4,113 +4,148 @@
 <head>
   <title>Title</title>
   <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
   <!-- icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet"
-    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-  <link rel="stylesheet" href="./flaticon/flaticon.css">
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+  <link rel="stylesheet" href="./flaticon/flaticon.css" />
 
   <!-- font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Oswald:wght@200&family=Pacifico&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./carousel/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="./carousel/css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="./diner.css">
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="./carousel/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./carousel/css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="./diner.css" />
 </head>
 
 <body>
   <!-- Giao -->
   <!-- Header -->
-  <section class="w3lhny-banner" id="home">
+  <div class="w3lhny-banner" id="home">
     <div class="container">
       <div class="w3_hny_header">
         <div class="w3_hnyits_logo">
-          <h1>
-            <a href="#" class="logo-brand">Diner</a>
-          </h1>
-
+          <h1><a class="logo-brand" href="index.html">Diner </a></h1>
         </div>
         <div class="w3menu-right-content">
           <div class="search-bar">
+            <!--/search-right-->
             <form class="search position-relative">
-              <input type="search" class="search_input" name="search" id="" placeholder="Search here.."
-                onload="equalWidth()" required>
-              <span class="fa fa-search search__icon"> </span>
+              <input type="search" class="search__input" name="search" placeholder="Search here.." onload="equalWidth()"
+                required="" />
+              <span class="fa fa-search search__icon"></span>
             </form>
+            <!--//search-right-->
+          </div>
+          <div class="w3_menu text-center">
+            <!-- toggle switch for light and dark theme -->
+            <div class="mobile-position">
+              <nav class="navigation">
+                <div class="theme-switch-wrapper">
+                  <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="mode-container">
+                      <i class="gg-sun"></i>
+                      <i class="gg-moon"></i>
+                    </div>
+                  </label>
+                </div>
+              </nav>
+            </div>
+            <!-- //toggle switch for light and dark theme -->
+            <img src="./image/moon.png" id="icon">
           </div>
           <div class="mobile-nav-button text-center">
-            <!-- <button id="trigger-overlay" type="button">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-              </button> -->
+            <button class="hamburger">
+              <i class="menuIcon  las la-bars"></i>
+              <i class="  closeIcon las la-times"></i>
+            </button>
+            <ul class="menu che">
+              <li><a class="menuItem" href="#">Home</a></li>
+              <li><a class="menuItem" href="#">About</a></li>
+              <li><a class="menuItem" href="#">services</a></li>
+              <li><a class="menuItem" href="#">blog</a></li>
+              <li><a class="menuItem" href="#">404</a></li>
+              <li><a class="menuItem" href="#">langding Page</a></li>
+              <li><a class="menuItem" href="#">Contacts</a></li>
+              <li><a class="menuItem" href="#">email</a></li>
+            </ul>
           </div>
         </div>
-        <!-- <div class="mobile-position">
-          <div class="navigation">
-            <div class="theme-switch-wrapper">
-              <label class="theme-switch" for="checkbox"></label>
-              <input type="checkbox" id="checkbox">
-              <div class="mode-container">
-                <i class="gg-sun"></i>
-                <i class="gg-moon"></i>
-              </div>
-            </div>
-          </div>
-         </div> -->
+        <!-- <div class="overlay overlay-scale">
+            <button type="button" class="overlay-close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
 
+            <nav>
+              <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="error.html">404</a></li>
+                <li><a href="landing-single.html">Landing Page</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="elements.html">Shot Codes</a></li>
+                <li><a href="email.html">Email</a></li>
+              </ul>
+            </nav>
+          </div> -->
       </div>
-      <!-- <div class="overlay overlay-scale open">
-        <button type="button" class="overlay-close">
-          <i class="fa fa-times" aria-hidden="true"></i>
-        </button>
-      </div> -->
-
-      <div class="banner-info">
-        <h3 class="mt-5">
-          The Only Thing We Love More Than Food Is You!
-        </h3>
-        <div class="paragraph">
-          <p class="pr-lg-5 mt-4 md-4 mt-3">
-            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea
-            ipsum sed consequuntur illum facere.
-          </p>
-          <a class="btn btn-white mt-sm-5 mt-4 mr-2" href="#">
-            Read More <span class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
-        </div>
+      <!--/bannerhny-info-->
+      <div class="bannerhny-info">
+        <h3 class="mb-4">The only thing we love more than food is you!</h3>
+        <div class="separatorhny"></div>
+        <p class="pr-lg-5 mt-md-4 mt-3">
+          Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+          vitae sit.Ea ipsum sed consequuntur illum facere.
+        </p>
+        <a class="btn btn-white mt-sm-5 mt-4 mr-2" href="about.html">
+          Read More
+          <span class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
       </div>
-  </section>
-  <!-- about us -->
-  <div class="about py-5">
+      <!--/bannerhny-info-->
+    </div>
+  </div>
+  <div class="w3l-content-1 py-5">
     <div class="container py-md-5">
-      <div class="about-list">
-
-        <div class="content-left ">
-          <h6 class="title-subhny title   ">About us</h6>
-          <h3 class="mb-4 title-w3l">We found our creative space that is open for you.</h3>
+      <div class="row content-1-grids">
+        <div class="col-lg-5 content-1-left">
+          <div class="header-title">
+            <h6 class="title-subhny">About Us</h6>
+            <h3 class="title-w3l mb-4">
+              We found our creative space that is open for you.
+            </h3>
+          </div>
         </div>
-        <div class="content-right">
-          <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.
-            Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init
-            dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init dolor sit.
-            <br>
-            <br>
-            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem
-            ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
+        <div class="col-lg-7 content-1-right pl-lg-5 mt-lg-0 mt-3">
+          <p class="">
+            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+            ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+            amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
+            Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit,
+            culpa!Lorem ipsum init dolor sit.
+          </p>
+          <p class="mt-3">
+            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+            ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+            amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
           </p>
         </div>
       </div>
-
-
     </div>
   </div>
   <!-- agent block -->
@@ -126,10 +161,13 @@
           <div class="agent-block-image-inf p-md-5 p-3">
             <h6 class="title-subhny two">More than 3000 Restaurants</h6>
             <h3 class="title-w3l two">
-              Book a table easly at the best price</h3>
-            <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus
-              turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices
-              in.</p>
+              Book a table easly at the best price
+            </h3>
+            <p class="my-3">
+              Vestibulum ante ipsum primis in faucibus orci luctus turpis
+              sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam
+              tesque et libero ut justo ultrices in.
+            </p>
 
             <div class="subscribe-cat mt-5">
               <div class="subscribe-cat-gd">
@@ -137,7 +175,9 @@
                   <span class="fa fa-thumbs-up"></span>
                 </div>
                 <a href="#" class="subscribe-cat-link">Best Deals</a>
-                <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                <p class="mt-2">
+                  Lorem ipsum viverra feugiat. Pellen tesque libero justo.
+                </p>
               </div>
 
               <div class="subscribe-cat-gd">
@@ -145,16 +185,16 @@
                   <span class="fa fa-cutlery"></span>
                 </div>
                 <a href="#" class="subscribe-cat-link">Best Food</a>
-                <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                <p class="mt-2">
+                  Lorem ipsum viverra feugiat. Pellen tesque libero justo.
+                </p>
               </div>
-
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
 
   <!-- Banner -->
 
@@ -387,33 +427,45 @@
       </div>
     </div>
   </div>
+
   <!-- Number -->
-  <div class="number">
-    <div class="container number-gird text-center py-lg-0 py-md-5 py-4">
-      <div class="row">
-        <div class="number__item col-md-3 col-6 mt-md-0 mt-4">
-          <span class="fa fa-building"></span>
-          <div class="counter">15,100</div>
-          <p>Branches</p>
-        </div>
-        <div class="number__item col-md-3 col-6 mt-md-0 mt-4">
-          <span class="fa fa-building"></span>
-          <div class="counter">19,256</div>
-          <p>Food Items</p>
-        </div>
-        <div class="number__item col-md-3 col-6 mt-md-0 mt-4">
-          <span class="fa fa-building"></span>
-          <div class="counter">12,100</div>
-          <p>Chefs</p>
-        </div>
-        <div class="number__item col-md-3 col-6 mt-md-0 mt-4">
-          <span class="fa fa-building"></span>
-          <div class="counter">2,560</div>
-          <p>Happy Customers</p>
+  <div class="number py-lg-0 py-md-5 py-4" id="stats">
+    <div class="container">
+      <div class="w3-stats">
+        <div class="row">
+          <div class="col-md-3 col-6 mt-md-0 mt-4">
+            <div class="item">
+              <span class="fa fa-building"></span>
+              <div class="counter mt-2">15,100</div>
+              <p class="item__text">Branches</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-4">
+            <div class="item">
+              <span class="fa fa-cutlery"></span>
+              <div class="counter mt-2">19,256</div>
+              <p class="item__text">Food Items</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-4">
+            <div class="item">
+              <span class="fa fa-users"></span>
+              <div class="counter mt-2">12,100</div>
+              <p class="item__text">Chefs</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-4">
+            <div class="item">
+              <span class="fa fa-smile"></span>
+              <div class="counter mt-2">2,560</div>
+              <p class="item__text">Happy Customers</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
   <!-- Number -->
 
   <!-- Video -->
@@ -453,61 +505,56 @@
           <h3>Latest Posts</h3>
           <h5>Blog Posts</h5>
         </div>
-        <div class="row ">
+        <div class="row">
           <div class="col-lg-4 col-md-6 mt-5 item">
-
             <div class="card">
               <div class="card_item p-0">
-                <img src="./img/banner1.jpg " class="card-img-top" alt="...">
+                <img src="./img/banner1.jpg " class="card-img-top" alt="..." />
                 <div class="post-pos">
                   <a href="#" class="post_content">Reciepe</a>
-                  <span>
-                    <i class="lar la-clock mr-2"></i> 10 Min Cook
-                  </span>
+                  <span> <i class="lar la-clock mr-2"></i> 10 Min Cook </span>
                 </div>
               </div>
 
-              <div class="card-body ">
-                <a href="#" class="card-title  ">The Best Cookie Recipes To Bake This
-                  Weekend</a>
-                <p class="card-text">Some quick example text to build on the card title and make up the
-                  bulk of the card's content.</p>
+              <div class="card-body">
+                <a href="#" class="card-title">The Best Cookie Recipes To Bake This Weekend</a>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make
+                  up the bulk of the card's content.
+                </p>
                 <div class="footer mt-3">
                   <div class="footer1">
-                    <a href="#"><img src="./img/team1.jpg" alt=""></a>
+                    <a href="#"><img src="./img/team1.jpg" alt="" /></a>
                     <a href="#">Rashed Kabir</a>
                   </div>
                   <div class="foter2">
                     <a href="#">Read More
-                      <i class="fa fa-chevron-right ml-2  "></i>
+                      <i class="fa fa-chevron-right ml-2"></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
           <div class="col-lg-4 col-md-6 mt-5 item">
-
             <div class="card">
               <div class="card_item p-0">
-                <img src="./img/banner3.jpg " class="card-img-top" alt="...">
+                <img src="./img/banner3.jpg " class="card-img-top" alt="..." />
                 <div class="post-pos">
                   <a href="#" class="post_content">Soup</a>
-                  <span>
-                    <i class="lar la-clock mr2"></i> 10 Min Cook
-                  </span>
+                  <span> <i class="lar la-clock mr2"></i> 10 Min Cook </span>
                 </div>
               </div>
 
-              <div class="card-body ">
-                <a href="#" class="card-title  ">The Best Cookie Recipes To Bake This
-                  Weekend</a>
-                <p class="card-text">Some quick example text to build on the card title and make up the
-                  bulk of the card's content.</p>
+              <div class="card-body">
+                <a href="#" class="card-title">The Best Cookie Recipes To Bake This Weekend</a>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make
+                  up the bulk of the card's content.
+                </p>
                 <div class="footer mt-3">
                   <div class="footer1">
-                    <a href="#"><img src="./img/team2.jpg" alt=""></a>
+                    <a href="#"><img src="./img/team2.jpg" alt="" /></a>
                     <a href="#">Jannatul Ferdous</a>
                   </div>
                   <div class="foter2">
@@ -518,29 +565,26 @@
                 </div>
               </div>
             </div>
-
           </div>
           <div class="col-lg-4 col-md-6 mt-5 item">
-
             <div class="card">
               <div class="card_item p-0">
-                <img src="./img/banner1.jpg " class="card-img-top" alt="...">
+                <img src="./img/banner1.jpg " class="card-img-top" alt="..." />
                 <div class="post-pos">
                   <a href="#" class="post_content">Drinks</a>
-                  <span>
-                    <i class="lar la-clock mr-2"></i> 15 Min Cook
-                  </span>
+                  <span> <i class="lar la-clock mr-2"></i> 15 Min Cook </span>
                 </div>
               </div>
 
-              <div class="card-body ">
-                <a href="#" class="card-title  ">The Best Cookie Recipes To Bake This
-                  Weekend</a>
-                <p class="card-text">Some quick example text to build on the card title and make up the
-                  bulk of the card's content.</p>
+              <div class="card-body">
+                <a href="#" class="card-title">The Best Cookie Recipes To Bake This Weekend</a>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make
+                  up the bulk of the card's content.
+                </p>
                 <div class="footer mt-3">
                   <div class="footer1">
-                    <a href="#"><img src="./img/team3.jpg" alt=""></a>
+                    <a href="#"><img src="./img/team3.jpg" alt="" /></a>
                     <a href="#">Rashed Kabir</a>
                   </div>
                   <div class="foter2">
@@ -551,38 +595,34 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
-
-
       </div>
-
     </div>
   </section>
   <!-- Testimonials -->
   <section class="w3l-clients w3l-agency-test quoc">
-    <div class="midd-w3 py-5 quoc2 ">
-      <div class=" container container_fix1 py-lg-5 py-md-3">
+    <div class="midd-w3 py-5 quoc2">
+      <div class="container container_fix1 py-lg-5 py-md-3">
         <div class="header-title text-center">
           <h6 class="title-subhny">Testimonials</h6>
-          <h3 class="title-w3l mb-5">
-            What People Say
-          </h3>
+          <h3 class="title-w3l mb-5">What People Say</h3>
         </div>
         <div id="owl-agency" class="owl-carousel owl-theme py-2 mb-4 text-center">
           <div class="item">
             <div class="testimonial-content">
               <div class="testimonial">
                 <a class="comment-img" href="#url"><img src="./img/team1.jpg" class="img-responsive"
-                    alt="placeholder image"></a>
+                    alt="placeholder image" /></a>
                 <blockquote>
                   <q>OMG! I cannot believe. It's Awesome</q>
                 </blockquote>
-                <p>My new site is so much faster and easier to work with than my old site. They are here
-                  to
-                  help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
-                  Pellen tesque libero ut justo, ultrices in ligula.</p>
+                <p>
+                  My new site is so much faster and easier to work with than
+                  my old site. They are here to help the customers to get
+                  their success. Nemo sit eos, quod minus eius illo labore.
+                  Pellen tesque libero ut justo, ultrices in ligula.
+                </p>
                 <div class="text-center mt-4">
                   <div class="people-info align-self">
                     <h3>Johnson william</h3>
@@ -596,14 +636,16 @@
             <div class="testimonial-content">
               <div class="testimonial">
                 <a class="comment-img" href="#url"><img src="./img/team2.jpg" class="img-responsive"
-                    alt="placeholder image"></a>
+                    alt="placeholder image" /></a>
                 <blockquote>
                   <q>Simply the best. Better than all the rest.</q>
                 </blockquote>
-                <p>My new site is so much faster and easier to work with than my old site. They are here
-                  to
-                  help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
-                  Pellen tesque libero ut justo, ultrices in ligula.</p>
+                <p>
+                  My new site is so much faster and easier to work with than
+                  my old site. They are here to help the customers to get
+                  their success. Nemo sit eos, quod minus eius illo labore.
+                  Pellen tesque libero ut justo, ultrices in ligula.
+                </p>
                 <div class="text-center mt-4">
                   <div class="people-info align-self">
                     <h3>Alexander sakura</h3>
@@ -617,14 +659,16 @@
             <div class="testimonial-content">
               <div class="testimonial">
                 <a class="comment-img" href="#url"><img src="./img/team3.jpg" class="img-responsive"
-                    alt="placeholder image"></a>
+                    alt="placeholder image" /></a>
                 <blockquote>
                   <q>OMG! I cannot believe. It's Awesome</q>
                 </blockquote>
-                <p>My new site is so much faster and easier to work with than my old site. They are here
-                  to
-                  help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
-                  Pellen tesque libero ut justo, ultrices in ligula.</p>
+                <p>
+                  My new site is so much faster and easier to work with than
+                  my old site. They are here to help the customers to get
+                  their success. Nemo sit eos, quod minus eius illo labore.
+                  Pellen tesque libero ut justo, ultrices in ligula.
+                </p>
                 <div class="text-center mt-4">
                   <div class="people-info align-self">
                     <h3>John wilson</h3>
@@ -638,14 +682,16 @@
             <div class="testimonial-content">
               <div class="testimonial">
                 <a class="comment-img" href="#url"><img src="./img/team1.jpg" class="img-responsive"
-                    alt="placeholder image"></a>
+                    alt="placeholder image" /></a>
                 <blockquote>
                   <q>OMG! I cannot believe. It's Awesome</q>
                 </blockquote>
-                <p>My new site is so much faster and easier to work with than my old site. They are here
-                  to
-                  help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
-                  Pellen tesque libero ut justo, ultrices in ligula.</p>
+                <p>
+                  My new site is so much faster and easier to work with than
+                  my old site. They are here to help the customers to get
+                  their success. Nemo sit eos, quod minus eius illo labore.
+                  Pellen tesque libero ut justo, ultrices in ligula.
+                </p>
                 <div class="text-center mt-4">
                   <div class="people-info align-self">
                     <h3>Julia sakura</h3>
@@ -661,15 +707,18 @@
   </section>
   <!-- Footer -->
   <section class="footer-main quoc">
-    <div class="footer-29  py-5">
-      <div class=" container container_fix2  py-lg-4">
-        <div class="row ">
+    <div class="footer-29 py-5">
+      <div class="container container_fix2 py-lg-4">
+        <div class="row">
           <div class="col-lg-4 col-md-6 col-sm-7 footer_list list1 pr-lg-5">
             <div class="footer-logo mb-3">
               <h2><a class="navbar-brand" href="#">Diner</a></h2>
             </div>
-            <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
-              tempufddfel. Lorem ipsum dolor sit amet Semper at elit.</p>
+            <p>
+              Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+              ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+              amet Semper at elit.
+            </p>
             <div class="icon_footer mt-4">
               <a href="#" class="facebook"><i class="lab la-facebook-f"></i></a>
               <a href="#" class="twitter"><i class="lab la-twitter"></i></a>
@@ -699,11 +748,16 @@
           </div>
 
           <div class="col-lg-4 col-md-6 col-sm-7 footer_list list4 mt-lg-0 mt-5">
-            <h6 class="footer_title">Subscribe to our Newsletter </h6>
-            <p>Enter your email and receive the latest news, updates and special offers from us.</p>
+            <h6 class="footer_title">Subscribe to our Newsletter</h6>
+            <p>
+              Enter your email and receive the latest news, updates and
+              special offers from us.
+            </p>
             <form action="#" class="subscribe mt-4" method="post">
-              <input type="email" name="email" placeholder="Your Email Address" required="">
-              <button class="btn btn-style  w-100 mt-3 text-white">Subscibe Now</button>
+              <input type="email" name="email" placeholder="Your Email Address" required="" />
+              <button class="btn btn-style w-100 mt-3 text-white">
+                Subscibe Now
+              </button>
             </form>
           </div>
         </div>
@@ -712,21 +766,23 @@
   </section>
   <!-- footer -->
 
-
   <section class="footer2">
     <div class="container">
       <div class="row bottom-copies">
-        <p class="col-lg-8 footer_left">© 2021 Diner. All rights reserved. Design by <a href="#" target="_blank">
-            W3Layouts</a></p>
+        <p class="col-lg-8 footer_left">
+          © 2021 Diner. All rights reserved. Design by
+          <a href="#" target="_blank"> W3Layouts</a>
+        </p>
 
         <div class="col-lg-4 footer_right">
           <ul class="d-flex text-lg-right">
             <li><a href="#"> Careers</a></li>
-            <li class="mx-lg-5 mx-md-4 mx-3"><a href="#">Privacy Policy</a></li>
+            <li class="mx-lg-5 mx-md-4 mx-3">
+              <a href="#">Privacy Policy</a>
+            </li>
             <li><a href="#">Contact us</a></li>
           </ul>
         </div>
-
       </div>
     </div>
   </section>
@@ -735,9 +791,6 @@
     <i class="las la-level-up-alt"></i>
   </div>
 
-
-
-
   <!-- end move top -->
 
   <!-- owl carousel -->
@@ -745,8 +798,8 @@
   <script src="./carousel/js/owl.carousel.min.js"></script>
 
   <script>
-    console.log('')
-    $('#owl-agency').owlCarousel({
+    console.log("");
+    $("#owl-agency").owlCarousel({
       loop: true,
       nav: true,
       margin: 50,
@@ -754,14 +807,14 @@
       responsive: {
         0: {
           items: 1,
-          nav: false
+          nav: false,
         },
         736: {
           items: 1,
-          nav: false
-        }
-      }
-    })
+          nav: false,
+        },
+      },
+    });
   </script>
   <script>
     $(document).ready(function () {
@@ -772,10 +825,11 @@
           $('#backtop').fadeOut();
         }
       });
+      $("#backtop").click(function () {
+        $('html,body').animate({ scrollTop: 0 }, 1000)
+      });
     });
   </script>
-
-
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -788,9 +842,71 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+  <!-- counter up -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+  <script src="./jquery.counterup-master/jquery.counterup.min.js"></script>
+  <script>
+    $(".counter").counterUp({
+      delay: 10,
+      time: 4000,
+    });
+  </script>
+  <!-- counter up -->
+
+  <!-- magic popup -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".popup-with-zoom-anim").magnificPopup({
+        type: "inline",
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: "auto",
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: "my-mfp-zoom-in",
+      });
+
+      $(".popup-with-move-anim").magnificPopup({
+        type: "inline",
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: "auto",
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: "my-mfp-slide-bottom",
+      });
+    });
+  </script>
+  <script>
+    var icon = document.getElementById('icon');
+    icon.onclick = function () {
+      document.body.classList.toggle('dark-theme')
+      if (document.body.classList.contains("dark-theme")) {
+        icon.src = "./image/sun.png"
+      } else {
+        icon.src = "./image/moon.png"
+      }
+    }
+  </script>
+
+  <script src="./diner.js"></script>
+
 </body>
 <!-- jquery -->
-<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-  crossorigin="anonymous"></script>
 
 </html>
